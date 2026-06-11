@@ -1,0 +1,26 @@
+body { font-family: 'Segoe UI', sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; }
+.container { max-width: 1200px; margin: auto; background: rgb(180, 179, 179); padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+h1 { text-align: center; color: #2c3e50; }
+
+form { display: flex; gap: 10px; margin-bottom: 30px; flex-wrap: wrap; }
+input, select, button { padding: 10px; border: 1px solid #ddd; border-radius: 4px; }
+input, select { flex: 1; min-width: 150px; }
+button { background: #3498db; color: white; border: none; cursor: pointer; transition: 0.3s; }
+button:hover { background: #2980b9; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th, td { padding: 12px; border-bottom: 1px solid #eee; text-align: left; }
+th { background: #2c3e50; color: white; }
+.delete-btn { background: #e74c3c; color: white; padding: 5px 10px; border-radius: 4px; cursor: pointer; }
+
+/* agregar estilos para alerta de stock bajo */
+.alerta-stock {
+    background-color: #ffcccc !important;
+    color: red;
+    font-weight: bold;
+    animation: parpadeo 1s infinite;
+}
+
+@keyframes parpadeo {
+    50% { opacity: 0.5; }
+}

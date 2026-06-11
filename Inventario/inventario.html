@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario TECNOCAND</title>
+    <link rel="stylesheet" href="styleinventario.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💻 Inventario de Equipos y Partes</h1>
+        <form id="inventory-form">
+            <select id="name">
+                <option value="Dell">DELL</option>
+                <option value="HP">HP</option>
+                <option value="ASUS">ASUS</option>
+                <option value="Lenovo">LENOVO</option>
+                <option value="Cisco">CISCO</option>
+                <option value="TP-Link">TP-LINK</option>
+                <option value="Varios">Varios</option>
+
+            </select>
+            
+            <input type="text" id="model" placeholder="Modelo" required>
+            
+            <select id="category">
+                <option value="pc">Portátil</option>
+                <option value="net">Redes</option>
+            </select>
+            
+            <input type="number" id="price" placeholder="Precio ($)" step="0.01" required>
+            
+            <input type="number" id="stock" placeholder="Cantidad" required>
+            
+            <input type="text" id="imagen" placeholder="Ruta imagen (ej: ./img/foto.jpg)" required>
+            
+            <button type="submit">Agregar al Inventario</button>
+        </form>
+
+        <table id="inventory-table">
+            <thead>
+                <tr>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+    </div>
+    
+    <script type="module" src="script_inventario2.js"></script>
+</body>
+</html>
